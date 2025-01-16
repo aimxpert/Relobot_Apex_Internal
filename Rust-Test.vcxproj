@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{3A5B27F7-65D8-454F-8F4E-EA7895F6E432}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RustTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>d3dgear64</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\Xerus-Internal-Modules\Rust-Test\Detours-master\include;D:\dxsdk-master\Include;C:\Users\1\Desktop\Xerus Internal Modules\Rust-Test\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;D:\Xerus-Internal-Modules\Rust-Test\Detours-master\lib.X64;D:\dxsdk-master\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\Xerus-Internal-Modules\Rust-Test\Detours-master\include;D:\dxsdk-master\Include;C:\Users\1\Desktop\Xerus Internal Modules\Rust-Test\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;D:\Xerus-Internal-Modules\Rust-Test\Detours-master\lib.X64;D:\dxsdk-master\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;NDEBUG;RUSTTEST_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <NoEntryPoint>false</NoEntryPoint>
+      <LinkTimeCodeGeneration />
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>library_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <EntryPointName>ps</EntryPointName>
+      <ShaderType>
+      </ShaderType>
+      <CompileD2DCustomEffect>false</CompileD2DCustomEffect>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;RUSTTEST_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Custom</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;RUSTTEST_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CallingConvention>FastCall</CallingConvention>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;RUSTTEST_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Hooker.cpp" />
+    <ClCompile Include="imgui-master\imgui.cpp" />
+    <ClCompile Include="imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="imgui-master\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="Classes.hpp" />
+    <ClInclude Include="enums.hpp" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="Hooker.h" />
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="il2cpp_lib.hpp" />
+    <ClInclude Include="imgui-master\imconfig.h" />
+    <ClInclude Include="imgui-master\imgui.h" />
+    <ClInclude Include="imgui-master\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui-master\imgui_internal.h" />
+    <ClInclude Include="imgui-master\imstb_rectpack.h" />
+    <ClInclude Include="imgui-master\imstb_textedit.h" />
+    <ClInclude Include="imgui-master\imstb_truetype.h" />
+    <ClInclude Include="ImportFunctions.h" />
+    <ClInclude Include="include.hpp" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="lazy_importer.hpp" />
+    <ClInclude Include="menu_config.h" />
+    <ClInclude Include="Mono.h" />
+    <ClInclude Include="offsets.h" />
+    <ClInclude Include="pattern.hpp" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="rust.hpp" />
+    <ClInclude Include="RustStructs.h" />
+    <ClInclude Include="sapphire_crt.hpp" />
+    <ClInclude Include="sapphire_hook.hpp" />
+    <ClInclude Include="sapphire_importer.hpp" />
+    <ClInclude Include="Singletons.h" />
+    <ClInclude Include="skStr.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="systemmm.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Vector.hpp" />
+    <ClInclude Include="xor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

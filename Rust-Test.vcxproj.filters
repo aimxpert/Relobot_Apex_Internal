@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{3b4b2820-bbf5-46c1-a5ef-2543feab6453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\HOOKS">
+      <UniqueIdentifier>{e080cca5-c8c7-40aa-8145-d7c2c75d2298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\UTILITIES">
+      <UniqueIdentifier>{a3c4fcc8-aae6-4376-b9e6-5667724e11c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\GAME">
+      <UniqueIdentifier>{25f54ae1-40de-4658-87f2-1f7ea37e0baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\RENDERER">
+      <UniqueIdentifier>{a6dece3b-2e4a-411d-a8c1-003fb6df01bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\MATH">
+      <UniqueIdentifier>{18b46343-4b16-4af1-ba20-60c2644757d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{f7beffe7-6223-4cb3-868d-1e6010cf5f1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hooker.cpp">
+      <Filter>Header Files\SDK\HOOKS</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Header Files\SDK\RENDERER</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Header Files\SDK\MATH</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_dx11.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_widgets.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooker.h">
+      <Filter>Header Files\SDK\HOOKS</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files\SDK\UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="Singletons.h">
+      <Filter>Header Files\SDK\UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes.hpp">
+      <Filter>Header Files\SDK\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportFunctions.h">
+      <Filter>Header Files\SDK\UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="Mono.h">
+      <Filter>Header Files\SDK\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="RustStructs.h">
+      <Filter>Header Files\SDK\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\SDK\RENDERER</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.hpp">
+      <Filter>Header Files\SDK\MATH</Filter>
+    </ClInclude>
+    <ClInclude Include="menu_config.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imconfig.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_impl_dx11.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_internal.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_rectpack.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_textedit.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_truetype.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="il2cpp_lib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire_importer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire_crt.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sapphire_hook.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rust.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="systemmm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lazy_importer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skStr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+  </ItemGroup>
+</Project>
