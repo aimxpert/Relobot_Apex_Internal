@@ -17,7 +17,6 @@ namespace SDK
 		std::intptr_t unity_player_base	;
 		MODULEINFO unity_player_mdlinfo;
 
-		BaseNetworkable* base_networkable_addr = nullptr;
 		void* game_object_manager_addr = nullptr;
 
 		unsigned int game_screen_X;
@@ -44,11 +43,6 @@ namespace SDK
 		namespace offsets
 		{
 		
-		}
-
-		namespace temp
-		{
-			BaseCamera* camera_object;
 		}
 	}
 }namespace Globals

@@ -16,7 +16,7 @@ Renderer::~Renderer()
 void Renderer::Initialize()
 {
 	ImGuiIO& io = ImGui::GetIO();
-	ImFontConfig font_cfg;
+	//ImFontConfig font_cfg;
 	//pRudaFont = io.Fonts->AddFontFromMemoryTTF(&ruda_bold_data, sizeof ruda_bold_data, 14.f);
 	//io.Fonts->AddFontFromFileTTF(("C:\\Windows\\Fonts\\Ruda-Bold.ttf"), 12);
 	//io.Fonts->AddFontFromFileTTF(("C:\\Windows\\Fonts\\Ruda-Bold.ttf"), 10);
@@ -338,17 +338,4 @@ Renderer* Renderer::GetInstance()
 		m_pInstance = new Renderer();
 
 	return m_pInstance;
-}
-
-std::string Helpers::VariableText(const char* format, ...)
-{
-	va_list argptr;
-	va_start(argptr, format);
-
-	char buffer[2048];
-	vsprintf(buffer, format, argptr);
-
-	va_end(argptr);
-
-	return buffer;
 }

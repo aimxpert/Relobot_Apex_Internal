@@ -4,7 +4,7 @@
 #include <d3d11.h>
 #include <d3dcompiler.h>
 #pragma comment(lib, "d3dcompiler")
-#include "include/lazy_importer.hpp"
+#include "lazy_importer.hpp"
 
 namespace SDK
 {
